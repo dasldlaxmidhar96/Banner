@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Arial, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*Style the navigation menu */
+nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*  style the banner section */
+.banner {
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 90vh;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.banner h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.banner h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.banner button {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+}
+
+.banner button:hover {
+  cursor: pointer;
+  background-color: #666;
+}
+
+/* Style the modal */
+
+.modal-header {
+  background-color: #333;
+  color: #fff;
+  border-bottom: none;
+}
+
+.modal-title {
+  font-size: 2rem;
+}
+
+.madal-body p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.modal-footer {
+  border-top: none;
+  justify-content: center;
+}
+
+.modal-footer button {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+}
+
+.modal-footer button:hover {
+  cursor: pointer;
+  background-color: #666;
 }
